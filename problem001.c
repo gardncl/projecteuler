@@ -3,6 +3,9 @@
 #include <math.h>
 #include <stdlib.h>
 
+//https://www.hackerrank.com/contests/projecteuler/challenges/euler001
+//December 19th, 2015
+
 unsigned long repeats(int r, unsigned long number){
     number = number - (number%r);
     unsigned long t = number/r;
@@ -15,7 +18,6 @@ unsigned long multi3and5(unsigned long number) {
 int main() {
 	int count, i;
 	scanf("%d\n", &count);
-	printf("%d\n",count);
 	for (i = 0; i < count; i++){
 		unsigned long limit; 
 		unsigned long total;
