@@ -3,9 +3,24 @@
 #include <math.h>
 #include <stdlib.h>
 
-//https://www.hackerrank.com/contests/projecteuler/challenges/euler002
-//December 19th, 2015
 
+/* 
+Project Euler: Problem 2
+December 19th, 2015
+Clay Gardner
+
+https://projecteuler.net/problem=2
+Solved the above problem.
+Input: 1 4000000
+Output: 4613732
+Time: sys 0m0.003s
+
+https://www.hackerrank.com/contests/projecteuler/challenges/euler002
+Solved for full points.
+*/
+
+//Simple dynamic programming iterative approach
+//to solving fibonacci and then summing all even numbers
 unsigned long sumEvenFibonacci(long number){
     long f0=1;
     long f1=2;

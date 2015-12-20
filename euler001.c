@@ -3,9 +3,23 @@
 #include <math.h>
 #include <stdlib.h>
 
-//https://www.hackerrank.com/contests/projecteuler/challenges/euler001
-//December 19th, 2015
 
+/* 
+Project Euler: Problem 1
+December 19th, 2015
+Clay Gardner
+
+https://projecteuler.net/problem=1
+Solved the above problem.
+Input: 1 1000 
+Output: 233168
+Time: sys	0m0.003s
+
+https://www.hackerrank.com/contests/projecteuler/challenges/euler124
+Solved for full points.
+*/
+
+//Finds sum of all multiples of r under number
 unsigned long repeats(int r, unsigned long number){
     number = number - (number%r);
     unsigned long t = number/r;
