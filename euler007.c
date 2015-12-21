@@ -22,14 +22,18 @@ Solved for full points.
 void bsmooth(long *primes, long n){
 	long i,c=1,num=3;
 	int p;
+	double sqrtN;
 	primes[0]=2;
 	while(c<n){
+		sqrtN = sqrt(num);
 		p=1;
-		for(i = 0; i < c; i++) {
+		i=0;
+		while(primes[i] <= sqrtN) {
 			if (num%primes[i]==0){
 				p=0;
 				break;
 			}
+			i++;
 		}
 		if(p){
 			primes[c]=num;
